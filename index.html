@@ -41,8 +41,10 @@
         .slide {
             position: absolute;
             inset: 0;
-            background-size: 60%;
-            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #000;
             opacity: 0;
             transition: opacity 1.2s ease-in-out;
         }
@@ -502,7 +504,7 @@
             d => d <= 7
                 ? `<strong>${d} DIAS</strong>! QUE SEMANA DOIDA VAI SER! BORA! 🚀🏄`
                 : `Relaxa que em <strong>${d} dias</strong> a zoeira começa! ⏳🤙`,
-            d => `PP da VS e Mansão maromba, vambora! 🏠💪🌊`
+            d => `Bora escutar um PP da VS e tomar Mansão maromba! 🏠💪🌊`
         ];
 
         /* =====================================================================
